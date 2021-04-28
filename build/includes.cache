@@ -1,0 +1,152 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\variants\\ARDUINO_NANO33BLE"
+  },
+  {
+    "Sourcefile": "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\build\\sketch\\IMU_gialibrarynano33.ino.cpp",
+    "Include": "Nano33BLEAccelerometer.h",
+    "Includepath": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src"
+  },
+  {
+    "Sourcefile": "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\build\\sketch\\IMU_gialibrarynano33.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEAccelerometer.cpp",
+    "Include": "Arduino_LSM9DS1.h",
+    "Includepath": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_LSM9DS1\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEAccelerometer.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEAccelerometer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEColour.cpp",
+    "Include": "Arduino_APDS9960.h",
+    "Includepath": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_APDS9960\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEColour.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEGesture.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEGyroscope.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEMagnetic.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEMicrophoneRMS.cpp",
+    "Include": "PDM.h",
+    "Includepath": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEMicrophoneRMS.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEPressure.cpp",
+    "Include": "Arduino_LPS22HB.h",
+    "Includepath": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_LPS22HB\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEPressure.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLEProximity.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLETempterature.cpp",
+    "Include": "Arduino_HTS221.h",
+    "Includepath": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_HTS221\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Nano33BLESensor\\src\\Nano33BLETempterature.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_LSM9DS1\\src\\LSM9DS1.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_APDS9960\\src\\Arduino_APDS9960.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src\\nrf52\\PDM.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src\\stm32\\PDM.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src\\stm32\\audio.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src\\stm32\\irq.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src\\stm32\\wm8994.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\mbed\\1.3.1\\libraries\\PDM\\src\\utility\\PDMDoubleBuffer.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_LPS22HB\\src\\BARO.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\a.rondon\\Documents\\Arduino\\libraries\\Arduino_HTS221\\src\\HTS.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
