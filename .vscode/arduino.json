@@ -1,7 +1,7 @@
 {
-    "sketch": "IMU_gialibrarynano33.ino",
+    "sketch": "nano33BLE_imuDalelibrary.ino",
     "board": "arduino:mbed:nano33ble",
-    "port": "COM19",
+    "port": "COM22",
     "programmer": "AVR ISP",
-    "output": "../IMU_gialibrarynano33/build"
+    "output": "../nano33BLE_IMUdaleLibrary/build"
 }
