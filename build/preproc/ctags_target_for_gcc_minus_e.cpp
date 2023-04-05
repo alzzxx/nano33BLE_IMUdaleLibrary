@@ -1,12 +1,12 @@
-# 1 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
+# 1 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino"
 
 
 /*****************************************************************************/
 /*INCLUDES                                                                   */
 /*****************************************************************************/
-# 7 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino" 2
-# 8 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino" 2
-# 9 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino" 2
+# 7 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino" 2
+# 8 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino" 2
+# 9 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino" 2
 
 /*****************************************************************************/
 /*MACROS                                                                     */
@@ -22,20 +22,10 @@
  * the each sensor. 
 
  */
-# 21 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
+# 21 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino"
 //Nano33BLEMagneticData magneticData;
 Nano33BLEGyroscopeData gyroscopeData;
 Nano33BLEAccelerometerData accelerometerData;
-const double outEnd = 36.0;
-const double outStart = 55.0;
-const double inpEnd = 1.00;
-const double inpStart = 0.00;
-const double outEnd2 = 36.0;
-const double outStart2 = 17.0;
-const double inpEnd2 = -1.00;
-const double inpStart2 = 0.00;
-double slope;
-double slope2;
 
 /*****************************************************************************/
 /*SETUP (Initialisation)                                                          */
@@ -44,8 +34,6 @@ void setup()
 {
     /* Serial setup for UART debugging */
     Serial.begin(115200);
-    slope = (outEnd - outStart) / (inpEnd - inpStart);
-    slope2 = (outEnd2 - outStart2) / (inpEnd2 - inpStart2);
     /* 
 
      * Initialises the all the sensor, and starts the periodic reading 
@@ -55,7 +43,7 @@ void setup()
      * circular buffer and can be read whenever.
 
      */
-# 49 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
+# 37 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino"
     // Magnetic.begin();
     Gyroscope.begin();
     Accelerometer.begin();
@@ -80,42 +68,24 @@ void loop()
      * allows the data to be printed in a coherrent way inside serial plotter.
 
      */
-# 67 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
+# 55 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino"
     //Magnetic.pop(magneticData);
     Gyroscope.pop(gyroscopeData);
     Accelerometer.pop(accelerometerData);
-    /*
 
     Serial.print("Accelerometer: ");
-
     Serial.print(accelerometerData.x);
-
     Serial.print('\t');
-
     Serial.print(accelerometerData.y);
-
     Serial.print('\t');
-
-     */
-# 77 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
     Serial.println(accelerometerData.z);
 
-    /*
-
     Serial.print("Gyroscope: ");
-
     Serial.print(gyroscopeData.x);
-
     Serial.print('\t');
-
     Serial.print(gyroscopeData.y);
-
     Serial.print('\t');
-
     Serial.println(gyroscopeData.z);
-
-    */
-# 87 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
     /*
 
     Serial.print("Magnetometer: ");
@@ -131,60 +101,6 @@ void loop()
     Serial.println(magneticData.z);
 
     */
-# 96 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
-    delay(1000);
-    /*
-
-    if (accelerometerData.z >= 0)
-
-    {
-
-        double yOut2 = outStart2 + slope2 * (accelerometerData.y - inpStart2);
-
-        Serial.print("yout2 (z>=0) es: ");
-
-        Serial.println(yOut2);
-
-    }
-
-    else
-
-    {
-
-        double yOut = outStart + slope * (-accelerometerData.y - inpStart);
-
-        Serial.print("yout (z<0) es: ");
-
-        Serial.println(yOut);
-
-        Serial.print("zout is: ");
-
-        Serial.println(accelerometerData.z);
-
-        
-
-    }
-
-    */
-# 114 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
-    /*
-
-    Serial.print("AnguloX: ");
-
-    Serial.println(atan(accelerometerData.x / sqrt(pow(accelerometerData.y, 2) + pow(accelerometerData.z, 2))) * (RAD_TO_DEG));
-
-
-
-    Serial.print("AnguloY: ");
-
-    Serial.println(atan(accelerometerData.y / sqrt(pow(accelerometerData.x, 2) + pow(accelerometerData.z, 2))) * (RAD_TO_DEG));
-
-
-
-    Serial.print("AnguloZ: ");
-
-    Serial.println(atan(accelerometerData.z / sqrt(pow(accelerometerData.x, 2) + pow(accelerometerData.y, 2))) * (RAD_TO_DEG));
-
-    */
-# 124 "c:\\Users\\a.rondon\\Documents\\GitHub\\nano33BLE_IMUdaleLibrary\\nano33BLE_imuDalelibrary.ino"
+# 81 "c:\\Users\\a.rondon\\Documents\\Arduino\\Arduino_VSC\\IMU_gialibrarynano33\\IMU_gialibrarynano33.ino"
+    delay(50);
 }
